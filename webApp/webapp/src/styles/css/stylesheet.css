@@ -1,0 +1,62 @@
+:root {
+  --orange: rgb(255, 158, 94);
+  --azur: rgb(145, 236, 252);
+}
+
+body {
+  color: aliceblue;
+}
+
+.navActive {
+  border-bottom: rgb(255, 158, 94) solid 3px;
+  padding-bottom: 10px;
+}
+.navigation {
+  position: relative;
+}
+
+.navigation a:hover {
+  color: #fff;
+  padding-bottom: 10px;
+  border-bottom: rgb(255, 158, 94) solid 3px;
+}
+
+#searchList::placeholder {
+  color: aliceblue;
+}
+
+#searchList {
+  color: aliceblue;
+}
+
+.mytooltip > .tooltip-inner {
+  max-width: 70%;
+  text-align: inherit;
+}
+
+.mytooltip > .tooltip-arrow {
+  max-width: 90%;
+  text-align: inherit;
+}
+
+.arrowDisplayNone::after {
+  display: none;
+}
+
+.quoteField {
+  background-color: var(--azur);
+}
+
+@media print {
+  #noPrint {
+    display: none !important;
+  }
+  textarea {
+    resize: none;
+    border: none;
+  }
+}
+
+.spinner {
+  color: var(--orange);
+}
